@@ -1,0 +1,10 @@
+// form -----------
+
+.form__label--hidden {
+  display: none;
+}
+
+.form__input {
+  @extend %form-user-pass;
+  @include primary-font-700;
+}

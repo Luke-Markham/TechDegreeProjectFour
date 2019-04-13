@@ -6,10 +6,84 @@
 // but additional styling may be needed
 // **********************************************
 
+// Main container ---
 
-// grid base class
+.container {
+  @include body-center {
+    @include mq(large) {
+      width: 80%;
+    }
+  }
+}
+
+// card ---
+
+.card {
+  margin-top: 2.5em;
+}
+// grid base class -------------------
+
+.grid__col--6 {
+  @include mq(large) {
+    padding-left: 3em;
+    padding-top: 1.5em;
+    & .img--avatar {
+      margin-left: 1em;
+    }
+  }
+}
+// NOTE: arranges button class when at 1400px breakpoint
+
+.grid__col--12 {
+  @include mq(large) {
+    @include flex();
+  }
+}
+
+// grid style ---
+
+.grid__col--3.theme__colors {
+  @include grid-btn;
+  background-color: $col-3-color;
+}
+.grid__col--4.theme__colors {
+  @include grid-btn;
+  background-color: $col-4-color;
+}
+.grid__col--5.theme__colors {
+  @include grid-btn;
+  background-color: $col-5-color;
+}
+.grid__col--6.theme__colors {
+  @include grid-btn;
+  background-color: $col-6-color;
+}
+.grid__col--7.theme__colors {
+  @include grid-btn;
+  background-color: $col-7-color;
+}
+.grid__col--7.theme__colors.centered {
+  @include grid-btn;
+  margin-bottom: 1.5em;
+  @include mq(large) {
+    transform: translateX(35%);
+    margin-bottom: 4em;
+  }
+}
+.grid__col--8.theme__colors {
+  @include grid-btn;
+  background-color: $col-8-color;
+}
+.grid__col--12.theme__colors {
+  @include grid-btn;
+  background-color: $col-12-color;
+  @include mq(large) {
+  }
+}
+
+// grid layout ---
+
 .grid {
-
   // .grid__row
   &__row {
     padding: 1em 10px;
@@ -24,16 +98,13 @@
 
   // .grid__col
   &__col {
-
     // create grid columns dynamically
     // loop through each column size
     @for $i from 1 through 12 {
-
       // concatenate CSS selector, ie when $i = 1,
       // selector would be .grid__col--1
       &--#{$i} {
-
-        // base styles applied to all grid columns 
+        // base styles applied to all grid columns
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
         margin-top: 10px;
@@ -41,12 +112,11 @@
 
         // NOTE: replace with media query mixin if aiming for exceeds
         @media (min-width: 768px) {
-
           // base stlyes applied to all grid columns
           margin-top: 0;
 
           // make column width a percentage of the column number / total columns
-          flex-basis: #{$i / 12 * 100 + "%"} ;
+          flex-basis: #{$i / 12 * 100 + "%"};
         }
       }
     }
@@ -54,13 +124,11 @@
 }
 
 // targets all elements with classes that begin with grid__col
-[class^=grid__col] {
+[class^="grid__col"] {
   // grid__col + grid__col, targets two sibling columns
   & + & {
-
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
-
       // add grid gutter
       margin-left: 10px;
     }

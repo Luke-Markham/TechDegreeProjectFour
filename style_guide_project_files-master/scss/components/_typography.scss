@@ -1,0 +1,45 @@
+// h1-6 styles ----
+
+.headline--primary {
+  @include primary-font-800;
+  color: $primary-color;
+  padding-left: 0.75em;
+  margin-bottom: 1.25em;
+  font-size: 2em;
+}
+
+.headline--secondary {
+  text-align: left;
+  @include primary-font-300;
+  padding-left: 0.5em;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  color: $p-color;
+  font-size: 0.975em;
+}
+
+// links ----
+
+.link {
+  color: $secondary-color;
+  @include primary-font-700;
+
+  &:hover {
+    color: black;
+  }
+}
+
+// blockquote ----
+
+.blockquote {
+  @include primary-font-300;
+  color: darken($p-color, 5%);
+  padding-left: 0.5em;
+  border-radius: 0.4em;
+  border-left: 0.35em solid $primary-color;
+  line-height: 1.4em;
+  font-size: 1.4em;
+  font-style: italic;
+  border-left: 0.35em solid $primary-color;
+  max-width: 80%;
+}

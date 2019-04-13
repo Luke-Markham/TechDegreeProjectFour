@@ -1,0 +1,86 @@
+// Mixin style -----------------
+
+// layout ----
+
+@mixin body-center {
+  width: 90%;
+  margin: 0 auto;
+  @content;
+}
+
+// media queries ----
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brk-s) and (max-width: $brk-m - 1) {
+      @content;
+    }
+  } @else if $break == "medium" {
+    @media (min-width: $brk-m) and (max-width: $brk-l -1) {
+      @content;
+    }
+  } @else if $break == "large" {
+    @media (min-width: $brk-l) {
+      @content;
+    }
+  }
+}
+// flex ----
+@mixin flex(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null,
+  $align-i: null,
+  $align-c: null,
+  $flex-b: null
+) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $align-i;
+  align-content: $align-c;
+  flex-basis: $flex-b;
+  @content;
+}
+
+// typography ----
+
+@mixin primary-font-300 {
+  font-family: $primary-font-stack;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+@mixin primary-font-400 {
+  font-family: $primary-font-stack;
+  font-weight: 400;
+}
+
+@mixin primary-font-700 {
+  font-family: $primary-font-stack;
+  font-weight: 700;
+}
+
+@mixin primary-font-800 {
+  font-family: $primary-font-stack;
+  font-weight: 800;
+}
+
+// grid button ----
+
+@mixin grid-btn {
+  width: 100%;
+  padding: 0.75em 0 0.75em 0.75em;
+  margin-top: 0.5em;
+  border-style: none;
+  border-radius: 0.32em;
+  color: $p-color;
+  text-align: left;
+  @include primary-font-700;
+  @content;
+  @include mq(large) {
+    text-align: center;
+  }
+}

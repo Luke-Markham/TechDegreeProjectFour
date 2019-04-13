@@ -1,0 +1,21 @@
+// Navigation styles -----------
+
+.nav {
+  text-align: center;
+  @include mq(large) {
+    // margin-top: 2.5em;
+    @include flex($just: center) {
+    }
+  }
+}
+
+.nav__item {
+  @extend %nav-style;
+  @include mq(large) {
+    padding: 0.5em 0em;
+    margin-left: 1em;
+    & a {
+      padding: 0.75em 0.5em;
+    }
+  }
+}
