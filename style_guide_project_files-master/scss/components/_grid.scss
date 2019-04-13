@@ -37,6 +37,9 @@
 .grid__col--12 {
   @include mq(large) {
     @include flex();
+    &:nth-last-of-type(3) {
+      margin-top: 2em;
+    }
   }
 }
 
@@ -78,6 +81,7 @@
   @include grid-btn;
   background-color: $col-12-color;
   @include mq(large) {
+    @include flex($just: center);
   }
 }
 

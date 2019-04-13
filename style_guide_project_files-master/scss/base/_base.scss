@@ -23,4 +23,8 @@ p {
   @include primary-font-300;
   color: $p-color;
   line-height: 1.45em;
+
+  @include mq(medium) {
+    color: red;
+  }
 }

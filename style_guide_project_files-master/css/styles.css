@@ -420,6 +420,11 @@ p {
   color: #828282;
   line-height: 1.45em;
 }
+@media (min-width: 768px) and (max-width: 1400px -1) {
+  p {
+    color: red;
+  }
+}
 
 .container {
   width: 90%;
@@ -448,6 +453,9 @@ p {
 @media (min-width: 1400px) {
   .grid__col--12 {
     display: flex;
+  }
+  .grid__col--12:nth-last-of-type(3) {
+    margin-top: 2em;
   }
 }
 
@@ -600,6 +608,13 @@ p {
     text-align: center;
   }
 }
+@media (min-width: 1400px) {
+  .grid__col--12.theme__colors {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .grid__row {
   padding: 1em 10px;
   display: flex;
@@ -745,6 +760,9 @@ p {
     margin-right: 2em;
     margin-left: 2em;
   }
+  .btn--default:nth-last-of-type(1) {
+    margin-left: 0;
+  }
 }
 
 .btn--success {
@@ -781,6 +799,10 @@ p {
   .btn--info {
     margin-right: 2em;
   }
+}
+
+.form + button {
+  margin-right: 100px;
 }
 
 .form__label--hidden {

@@ -1,5 +1,9 @@
 // form -----------
 
+.form + button {
+  margin-right: 100px;
+}
+
 .form__label--hidden {
   display: none;
 }
