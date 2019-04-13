@@ -740,21 +740,47 @@ p {
 .btn--default {
   background-color: #64defc;
 }
+@media (min-width: 1400px) {
+  .btn--default {
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+}
 
 .btn--success {
   background-color: #66cc82;
+}
+@media (min-width: 1400px) {
+  .btn--success {
+    margin-right: 2em;
+  }
 }
 
 .btn--error {
   background-color: #e47479;
 }
+@media (min-width: 1400px) {
+  .btn--error {
+    margin-right: 2em;
+  }
+}
 
 .btn--warning {
   background-color: #ed7553;
 }
+@media (min-width: 1400px) {
+  .btn--warning {
+    margin-right: 2em;
+  }
+}
 
 .btn--info {
   background-color: #927bc1;
+}
+@media (min-width: 1400px) {
+  .btn--info {
+    margin-right: 2em;
+  }
 }
 
 .form__label--hidden {

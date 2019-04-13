@@ -3,24 +3,40 @@
 .btn--default {
   @extend %btn-btns-style;
   background-color: $default-color;
+  @include mq(large) {
+    margin-right: 2em;
+    margin-left: 2em;
+  }
 }
 
 .btn--success {
   @extend %btn-btns-style;
   background-color: $success-color;
+  @include mq(large) {
+    margin-right: 2em;
+  }
 }
 
 .btn--error {
   @extend %btn-btns-style;
   background-color: $error-color;
+  @include mq(large) {
+    margin-right: 2em;
+  }
 }
 
 .btn--warning {
   @extend %btn-btns-style;
   background-color: $warning-color;
+  @include mq(large) {
+    margin-right: 2em;
+  }
 }
 
 .btn--info {
   @extend %btn-btns-style;
   background-color: $info-color;
+  @include mq(large) {
+    margin-right: 2em;
+  }
 }
