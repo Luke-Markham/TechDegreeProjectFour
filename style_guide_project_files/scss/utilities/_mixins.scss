@@ -12,11 +12,11 @@
 
 @mixin mq($break) {
   @if $break == "small" {
-    @media (min-width: $brk-s) and (max-width: $brk-m - 1) {
+    @media (min-width: $brk-s) {
       @content;
     }
   } @else if $break == "medium" {
-    @media (min-width: $brk-m) and (max-width: $brk-l -1) {
+    @media (min-width: $brk-m) {
       @content;
     }
   } @else if $break == "large" {

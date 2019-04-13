@@ -95,7 +95,7 @@
     flex-direction: column;
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq(medium) {
       flex-direction: row;
     }
   }
@@ -115,7 +115,7 @@
         flex-basis: 100%;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+        @include mq(medium) {
           // base stlyes applied to all grid columns
           margin-top: 0;
 
@@ -132,7 +132,7 @@
   // grid__col + grid__col, targets two sibling columns
   & + & {
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include mq(medium) {
       // add grid gutter
       margin-left: 10px;
     }

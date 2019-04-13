@@ -420,11 +420,6 @@ p {
   color: #828282;
   line-height: 1.45em;
 }
-@media (min-width: 768px) and (max-width: 1400px -1) {
-  p {
-    color: red;
-  }
-}
 
 .container {
   width: 90%;
