@@ -435,6 +435,12 @@ p {
   margin-top: 2.5em;
 }
 
+@media (min-width: 768px) {
+  .grid__col--6 .img--avatar {
+    transform: translateY(-10%);
+    padding-left: 7em;
+  }
+}
 @media (min-width: 1400px) {
   .grid__col--6 {
     padding-left: 3em;
@@ -442,6 +448,8 @@ p {
   }
   .grid__col--6 .img--avatar {
     margin-left: 1em;
+    transform: none;
+    padding-left: 3em;
   }
 }
 
@@ -817,6 +825,11 @@ p {
 .img--avatar {
   margin: 1em 0;
   transform: translateX(50%);
+}
+@media (min-width: 768px) {
+  .img--avatar {
+    transform: translateX(10%);
+  }
 }
 @media (min-width: 1400px) {
   .img--avatar {

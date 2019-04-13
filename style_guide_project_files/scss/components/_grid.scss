@@ -24,11 +24,19 @@
 // grid base class -------------------
 
 .grid__col--6 {
+  @include mq(medium) {
+    & .img--avatar {
+      transform: translateY(-10%);
+      padding-left: 7em;
+    }
+  }
   @include mq(large) {
     padding-left: 3em;
     padding-top: 1.5em;
     & .img--avatar {
       margin-left: 1em;
+      transform: none;
+      padding-left: 3em;
     }
   }
 }
