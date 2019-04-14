@@ -8,10 +8,10 @@ ul {
   list-style-type: none;
   @include primary-font-300;
   padding: 0;
-  @include mq(large) {
-    margin-top: 2.25em;
-    margin-left: 6em;
-  }
+  // @include mq(large) {
+  //   margin-top: 2.25em;
+  //   margin-left: 6em;
+  // }
 }
 
 a {
