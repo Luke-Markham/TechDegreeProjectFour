@@ -1,6 +1,9 @@
 // form -----------
 .form {
   text-align: center;
+  @include mq(large) {
+    margin-left: 1em;
+  }
 }
 
 .form + button {
