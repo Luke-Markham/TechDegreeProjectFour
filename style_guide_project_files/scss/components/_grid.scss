@@ -40,6 +40,11 @@
   @include grid-btn;
   background-color: $col-3-color;
 }
+
+.grid__col--3 {
+  @include flex($just: center) {
+  }
+}
 .grid__col--4.theme__colors {
   @include grid-btn;
   background-color: $col-4-color;
@@ -47,11 +52,20 @@
 .grid__col--5.theme__colors {
   @include grid-btn;
   background-color: $col-5-color;
+
+  .grid__col--6 {
+    @include flex($just: center);
+  }
 }
 .grid__col--6.theme__colors {
   @include grid-btn;
   background-color: $col-6-color;
+  text-align: center;
 }
+.grid__col--6 {
+  @include flex($just: center);
+}
+
 .grid__col--7.theme__colors {
   @include grid-btn;
   background-color: $col-7-color;

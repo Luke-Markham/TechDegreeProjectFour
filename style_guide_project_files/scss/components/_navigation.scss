@@ -3,7 +3,7 @@
 .nav {
   text-align: center;
   @include mq(large) {
-    // margin-top: 2.5em;
+    margin-top: 2.5em;
     @include flex($just: center) {
     }
   }

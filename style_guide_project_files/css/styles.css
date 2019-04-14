@@ -396,20 +396,17 @@ ul {
   list-style-type: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 18px;
   padding: 0;
 }
 
 a {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 18px;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 18px;
   color: #828282;
   line-height: 1.45em;
 }
@@ -455,6 +452,11 @@ p {
   }
 }
 
+.grid__col--3 {
+  display: flex;
+  justify-content: center;
+}
+
 .grid__col--4.theme__colors {
   width: 100%;
   padding: 0.75em 0 0.75em 0.75em;
@@ -490,6 +492,10 @@ p {
     text-align: center;
   }
 }
+.grid__col--5.theme__colors .grid__col--6 {
+  display: flex;
+  justify-content: center;
+}
 
 .grid__col--6.theme__colors {
   width: 100%;
@@ -502,11 +508,17 @@ p {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   background-color: #4aacca;
+  text-align: center;
 }
 @media (min-width: 769px) {
   .grid__col--6.theme__colors {
     text-align: center;
   }
+}
+
+.grid__col--6 {
+  display: flex;
+  justify-content: center;
 }
 
 .grid__col--7.theme__colors {
@@ -823,6 +835,7 @@ p {
 }
 @media (min-width: 769px) {
   .nav {
+    margin-top: 2.5em;
     display: flex;
     justify-content: center;
   }
@@ -851,7 +864,6 @@ p {
   text-align: left;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 18px;
   padding-left: 0.5em;
   margin-top: 2em;
   margin-bottom: 1.5em;
@@ -871,7 +883,6 @@ p {
 .blockquote {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 18px;
   color: #757575;
   padding-left: 0.5em;
   border-radius: 0.4em;
