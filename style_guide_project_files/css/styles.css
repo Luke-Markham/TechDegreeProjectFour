@@ -8,7 +8,7 @@
 }
 .nav__item a {
   color: black;
-  padding: 4% 40%;
+  padding: 4%;
 }
 .nav__item a:hover {
   color: white;
