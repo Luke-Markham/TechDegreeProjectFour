@@ -430,24 +430,6 @@ p {
 }
 
 @media (min-width: 768px) {
-  .grid__col--6 .img--avatar {
-    transform: translateY(-10%);
-    padding-left: 7em;
-  }
-}
-@media (min-width: 768px) {
-  .grid__col--6 {
-    padding-left: 3em;
-    padding-top: 1.5em;
-  }
-  .grid__col--6 .img--avatar {
-    margin-left: 1em;
-    transform: none;
-    padding-left: 3em;
-  }
-}
-
-@media (min-width: 768px) {
   .grid__col--12 {
     display: flex;
   }
