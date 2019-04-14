@@ -1,22 +1,24 @@
 .img--logo {
   margin: 1.25em 0;
-  transform: translateX(75%);
+  // transform: translateX(75%);
   @extend %image-w;
 }
 .img--avatar {
   margin: 1em 0;
-  transform: translateX(50%);
+  // transform: translateX(50%);
   @extend %image-w;
-  @include mq(medium) {
-    transform: translateX(10%);
-  }
-  @include mq(large) {
-    transform: translateX(40%);
-  }
+  // @include mq(medium) {
+  //   transform: translateX(10%);
+  // }
+  // @include mq(large) {
+  //   transform: translateX(40%);
+  // }
+  text-align: center;
 }
 
 .img--frame {
   @extend %image-w;
   border: 0.1px solid rgb(201, 201, 201);
   padding: 0.9em;
+  width: 100%;
 }

@@ -825,27 +825,17 @@ p {
 
 .img--logo {
   margin: 1.25em 0;
-  transform: translateX(75%);
 }
 
 .img--avatar {
   margin: 1em 0;
-  transform: translateX(50%);
-}
-@media (min-width: 768px) {
-  .img--avatar {
-    transform: translateX(10%);
-  }
-}
-@media (min-width: 1400px) {
-  .img--avatar {
-    transform: translateX(40%);
-  }
+  text-align: center;
 }
 
 .img--frame {
   border: 0.1px solid #c9c9c9;
   padding: 0.9em;
+  width: 100%;
 }
 
 .nav {
