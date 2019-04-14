@@ -33,7 +33,6 @@ a {
   color: black;
   outline-style: none;
   width: 90%;
-  margin-left: 1.25em;
   font-size: 0.9em;
 }
 
@@ -786,6 +785,10 @@ p {
   }
 }
 
+.form {
+  text-align: center;
+}
+
 .form + button {
   margin-right: 100px;
 }
@@ -801,6 +804,8 @@ p {
 
 .img--logo {
   margin: 1.25em 0;
+  display: flex;
+  justify-content: center;
 }
 
 .img--avatar {

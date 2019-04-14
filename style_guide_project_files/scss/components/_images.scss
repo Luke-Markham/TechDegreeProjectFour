@@ -2,6 +2,8 @@
   margin: 1.25em 0;
   // transform: translateX(75%);
   @extend %image-w;
+  @include flex($just: center) {
+  }
 }
 .img--avatar {
   margin: 1em 0;
