@@ -569,6 +569,12 @@ p {
     text-align: center;
   }
 }
+@media (min-width: 768px) {
+  .grid__col--7.theme__colors.centered {
+    transform: translateX(35%);
+    margin-bottom: 5em;
+  }
+}
 @media (min-width: 1400px) {
   .grid__col--7.theme__colors.centered {
     transform: translateX(35%);

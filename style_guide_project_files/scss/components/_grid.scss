@@ -76,6 +76,11 @@
 .grid__col--7.theme__colors.centered {
   @include grid-btn;
   margin-bottom: 1.5em;
+  @include mq(medium) {
+    transform: translateX(35%);
+    margin-bottom: 5em;
+  }
+
   @include mq(large) {
     transform: translateX(35%);
     margin-bottom: 4em;
