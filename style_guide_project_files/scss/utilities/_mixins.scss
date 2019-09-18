@@ -77,6 +77,10 @@
   border-radius: 0.32em;
   color: $p-color;
   text-align: left;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: translateY(-10%) scale(1.025);
+  }
   @include primary-font-700;
   @content;
   @include mq(large) {
